@@ -1,0 +1,14 @@
+/*  #ff3368; #ecfdff; */
+.btn
+{
+    border:5;
+    border-color: black;
+    border-radius: 5px;
+    text-decoration:none ;
+    color:green;
+    font-weight: bold;
+    
+}
+a:hover{
+    background-color: blueviolet;
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* to Center the Div There are Two Methods 
+        PARENT DIV position:relative;
+        and CHILD DIV position:absolute; */
+
+        /* .child{
+            position :absolute;
+            left:50%;
+            top:50%;
+            transform:translate(-50%,-50%)
+        } */
+
+        /* SECOND METHOD using FLEXBOX-COLUMN
+        .flex-container{
+            display:flex;
+            flex-direction:row;
+            justify-content:center
+            align-items:center;
+        }
+        */
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
+        body{
+            height:100vh;
+            background-color:#191825;
+
+            /* 1st trick */
+            /* position: relative; */
+
+            /* 2nd using flex box */
+            display:flex;
+            justify-content: center;
+            align-items: center;
+
+            /* 3rd trick */
+            /* display:grid;
+            place-items: center; */
+
+            /* 4th trick */
+            /* display:grid;
+            justify-content:center;
+            
+            display: align-item:center; */
+        }
+        .child{
+            width:400px;
+            height:400px;
+            background-color: #865dff;
+
+            /* 1st */
+            /* position:absolute;
+            top:50%;
+            left:50%;
+            transform:translate(-50%,-50%) */
+
+            /* margin:auto; */
+
+            /* text center */
+            display:flex;
+            justify-content:center;
+            align-items:center;
+
+            color:#fff;
+            text-transform:uppercase;
+            font-size:20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="child">Text center</div>
+</body>
+</html>
